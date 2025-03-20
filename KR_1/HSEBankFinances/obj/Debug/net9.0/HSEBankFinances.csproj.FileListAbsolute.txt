@@ -1,0 +1,15 @@
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/bin/Debug/net9.0/HSEBankFinances
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/bin/Debug/net9.0/HSEBankFinances.deps.json
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/bin/Debug/net9.0/HSEBankFinances.runtimeconfig.json
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/bin/Debug/net9.0/HSEBankFinances.dll
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/bin/Debug/net9.0/HSEBankFinances.pdb
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.GeneratedMSBuildEditorConfig.editorconfig
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.AssemblyInfoInputs.cache
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.AssemblyInfo.cs
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.csproj.CoreCompileInputs.cache
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.sourcelink.json
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.dll
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/obj/Debug/net9.0/refint/HSEBankFinances.dll
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.pdb
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.genruntimeconfig.cache
+/Users/elvira/Desktop/2 курс/software-design/KR_1/HSEBankFinances/obj/Debug/net9.0/ref/HSEBankFinances.dll
