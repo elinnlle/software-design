@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "9oG6PEBhyKg=",
+  "success": true,
+  "projectFilePath": "/Users/elvira/Desktop/software-design/MINI_HW_2/MOSZoo.Infrastructure/MOSZoo.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/Users/elvira/.nuget/packages/microsoft.extensions.dependencyinjection/10.0.0-preview.3.25171.5/microsoft.extensions.dependencyinjection.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "/Users/elvira/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.0-preview.3.25171.5/microsoft.extensions.dependencyinjection.abstractions.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "/Users/elvira/.nuget/packages/microsoft.netcore.app.ref/8.0.12/microsoft.netcore.app.ref.8.0.12.nupkg.sha512",
+    "/Users/elvira/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.12/microsoft.aspnetcore.app.ref.8.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

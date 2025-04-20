@@ -1,0 +1,6 @@
+@MOSZoo.Presentation_HostAddress = http://localhost:5051
+
+GET {{MOSZoo.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

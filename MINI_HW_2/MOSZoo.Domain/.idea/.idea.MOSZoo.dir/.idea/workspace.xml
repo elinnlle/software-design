@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8fca29c-d80d-4607-b570-91e3b2ba6cce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../MOSZooWebApi/MOSZoo.Domain/MOSZoo.Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/bin/Debug/net9.0/HSEBankFinances.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/bin/Debug/net9.0/HSEBankFinances.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/bin/Debug/net9.0/HSEBankFinances.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/bin/Debug/net9.0/HSEBankFinances.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/HSEBankFinances.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/ref/HSEBankFinances.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/ref/HSEBankFinances.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/refint/HSEBankFinances.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/Debug/net9.0/refint/HSEBankFinances.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../KR_1/HSEBankFinances/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MINI_HW_1/MOSZoo/Domain/Animals/Herbo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../MINI_HW_1/MOSZoo/Domain/Animals/Herbo.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "elinnlle"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/elinnlle/software-design.git",
+    "accountId": "b2a6276d-4992-44f2-a8b4-0d03094a5ba4"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2vyDlCNBrOqdoiWkALoZGAnOdeH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8fca29c-d80d-4607-b570-91e3b2ba6cce" name="Changes" comment="" />
+      <created>1745108568500</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745108568500</updated>
+      <workItem from="1745108569550" duration="25000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

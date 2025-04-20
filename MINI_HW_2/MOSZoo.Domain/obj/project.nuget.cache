@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "n1UX0fv0U54=",
+  "success": true,
+  "projectFilePath": "/Users/elvira/Desktop/software-design/MINI_HW_2/MOSZoo.Domain/MOSZoo.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/elvira/.nuget/packages/microsoft.netcore.app.ref/8.0.12/microsoft.netcore.app.ref.8.0.12.nupkg.sha512",
+    "/Users/elvira/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.12/microsoft.aspnetcore.app.ref.8.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
