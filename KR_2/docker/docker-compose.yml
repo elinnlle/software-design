@@ -1,0 +1,94 @@
+name: file_service
+services:
+  meta_data_db:
+    build:
+      context: ../meta_data_db
+      dockerfile: Dockerfile
+    ports:
+      - "5433:5432"
+    volumes:
+      - meta_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: "partac"
+      POSTGRES_PASSWORD: "partac"
+      POSTGRES_DB: "filestorage"
+
+  analysis_data_db:
+    build:
+      context: ../analysis_data_db
+      dockerfile: Dockerfile
+    ports:
+      - "5434:5432"
+    volumes:
+      - analysis_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: "partac"
+      POSTGRES_PASSWORD: "partac"
+      POSTGRES_DB: "analysis"
+
+  minio:
+    image: minio/minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: "minioadmin"
+      MINIO_ROOT_PASSWORD: "minioadmin"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+
+  file_storage_service:
+    container_name: file_storage_service
+    build:
+      context: ..
+      dockerfile: docker/dockerfiles/Dockerfile.storage
+    environment:
+      POSTGRES_USER: "partac"
+      POSTGRES_PASSWORD: "partac"
+      POSTGRES_DB: "filestorage"
+      POSTGRES_HOST: "meta_data_db"
+      POSTGRES_PORT: "5432"
+      POSTGRES_URL: "postgresql+asyncpg://partac:partac@meta_data_db:5432/filestorage"
+
+      MINIO_ROOT_USER: "minioadmin"
+      MINIO_ROOT_PASSWORD: "minioadmin"
+      MINIO_BUCKET_NAME: "files"
+      MINIO_PORT: "9000"
+      LOGGER_LEVEL: "INFO"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - meta_data_db
+      - minio
+
+  file_analysis_service:
+    container_name: file_analysis_service
+    build:
+      context: ..
+      dockerfile: docker/dockerfiles/Dockerfile.analysis
+    environment:
+      POSTGRES_USER: "partac"
+      POSTGRES_PASSWORD: "partac"
+      POSTGRES_DB: "analysis"
+      POSTGRES_HOST: "analysis_data_db"
+      POSTGRES_PORT: "5432"
+      POSTGRES_URL: "postgresql+asyncpg://partac:partac@analysis_data_db:5432/analysis"
+      LOGGER_LEVEL: "INFO"
+    ports:
+      - "8001:8000"
+    depends_on:
+      - analysis_data_db
+
+  nginx:
+    build: ../nginx
+    ports:
+      - "8080:80"
+    depends_on:
+      - file_storage_service
+      - file_analysis_service
+
+volumes:
+  minio_data:
+  meta_data:
+  analysis_data:
