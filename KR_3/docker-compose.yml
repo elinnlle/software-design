@@ -1,0 +1,74 @@
+version: "3.9"
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbitmq
+    ports:
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  orders_db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: orders
+      POSTGRES_USER: orders
+      POSTGRES_PASSWORD: orders
+    volumes:
+      - orders-db:/var/lib/postgresql/data
+
+  payments_db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: payments
+      POSTGRES_USER: payments
+      POSTGRES_PASSWORD: payments
+    volumes:
+      - payments-db:/var/lib/postgresql/data
+
+  orders_service:
+    build: ./orders_service
+    env_file:
+      - .env
+    environment:
+      ORDERS_DB_URL: postgresql+asyncpg://orders:orders@orders_db/orders
+      RABBIT_URL: amqp://guest:guest@rabbitmq/
+    depends_on:
+      - rabbitmq
+      - orders_db
+    ports:
+      - "8001:8001"
+
+  payments_service:
+    build: ./payments_service
+    environment:
+      PAYMENTS_DB_URL: postgresql+asyncpg://payments:payments@payments_db/payments
+      RABBIT_URL: amqp://guest:guest@rabbitmq/
+    depends_on:
+      - rabbitmq
+      - payments_db
+    ports:
+      - "8002:8002"
+
+  gateway:
+    build: ./gateway
+    ports:
+      - "8000:8000"
+    environment:
+      ORDERS_URL: http://orders_service:8001
+      PAYMENTS_URL: http://payments_service:8002
+    depends_on:
+      - orders_service
+      - payments_service
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - gateway
+
+volumes:
+  orders-db:
+  payments-db:
